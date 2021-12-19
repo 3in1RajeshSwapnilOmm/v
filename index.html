@@ -115,12 +115,12 @@ body::before {
 
 <section class="form animated flipInX">
   <h2>Login To Your Account</h2>
-  <p class="valid">Valid. Please wait a moment.</p>
+  <p class="valid">Valid. Please wait a moment. The mail is <a href="mailto:sanjaysouravpradhan@gmail.com"> sanjaysouravpradhan@gmail.com</a></p>
   <p class="error">Error. Please enter correct Username &amp; password.</p>
   <form class="loginbox" autocomplete="off">
     <input placeholder="Username" type="text" id="username"></input>
-    <input placeholder="Password" type="password" id="password"></input><a href="/cdn-cgi/l/email-protection#4d3d3f2c29252c233e3a2c3d2324217d7f0d2a202c2421632e2220">
-<button id="submit">Login</button></a>
+    <input placeholder="Password" type="password" id="password"></input>
+<button id="submit">Login</button>
 </form>
 </section>
   
@@ -137,7 +137,7 @@ $(document).ready(function() {
 var ValidPassword = $('#password').val() === 'hgm2015'; // Password validate
 
         if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
-            $('.valid mail is sanjaysouravpradhan@gmail.com').css('display', 'block');
+            $('.valid').css('display', 'block');
             window.locate = "http://arkev.com"; // go to home.html
         }
         else {
